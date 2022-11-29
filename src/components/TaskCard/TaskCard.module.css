@@ -1,0 +1,37 @@
+.taskContent {
+  padding: 1rem;
+  background: var(--gray-400);
+  margin: 16px;
+  border-radius: 8px;
+  max-width: 46rem;
+  margin-inline: auto;
+  align-items: center;
+}
+
+.taskContent a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskAndCheckbox {
+  display: flex;
+  gap: 8px;
+}
+
+.taskAndCheckbox input{
+  border-radius: 2px;
+}
+
+.taskContent a button {
+  display: flex;
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  lime-height: 0;
+  border-radius: 2px;
+}
+
+.taskContent a button:hover {
+  color: var(--red-500);
+}

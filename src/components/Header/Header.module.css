@@ -1,0 +1,27 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 0;
+  align-itens: center;
+}
+
+.header img {
+  margin-right: 0.75rem;
+  width: 1.375rem;
+  height: 2.25rem;
+}
+
+.header span {
+  left: calc(50% - 92px / 2 + 17px);
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--blue);
+}
+
+.header span + span {
+  color: var(--purple);
+}

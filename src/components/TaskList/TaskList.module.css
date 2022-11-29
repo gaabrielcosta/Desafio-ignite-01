@@ -1,0 +1,24 @@
+.taskHeader {
+  max-width: 46rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.taskHeader span {
+  padding: 2px 8px;
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.taskHeader span + span {
+  padding: 2px 8px;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  border-radius: 999px;
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}
