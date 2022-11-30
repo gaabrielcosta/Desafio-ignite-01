@@ -14,12 +14,66 @@
 }
 
 .taskAndCheckbox {
-  display: flex;
-  gap: 8px;
+  display: block;
+  position: relative;
+  padding-left: 1.5rem;
+  /* margin-bottom: 1px; */
+  cursor: pointer;
+  font-size: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.taskAndCheckbox input{
-  border-radius: 2px;
+.taskAndCheckbox input[type='checkbox'] {
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.taskAndCheckbox input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1.09rem;
+  height: 1.09rem;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  border: 2px solid var(--blue);
+}
+
+.taskAndCheckbox input[type='checkbox']:checked:before {
+  background-color: var(--purple);
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1.09rem;
+  height: 1.09rem;
+  top: 0;
+  left: 0;
+}
+
+.taskAndCheckbox input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 7.31px;
+  border: solid var(--gray-100);
+  border-width: 0 2px 2px 0;
+  margin-left: -16.5px;
+  margin-top: 4.5px;
+  transform: rotate(45deg);
+  background-color: var(--purple);
+
+}
+
+.textTask {
+  color: var(--gray-100);
+  line-height: 140%;
+  font-size: 0.875rem;
+  margin-left: 0.95rem;
 }
 
 .taskContent a button {

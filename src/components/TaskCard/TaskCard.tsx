@@ -18,7 +18,7 @@ export default function TaskCard({ task, deleteTasks, handleActiveTask }: Props)
             defaultChecked={task.isComplete} 
             onChange={() => handleActiveTask(task)}
           />
-          <h4>{task.title}</h4>
+          <h4 className={styles.textTask}>{task.title}</h4>
         </div>
         <button onClick={() => deleteTasks(task)} title="Deletar tarefa">
           <Trash size={24} />

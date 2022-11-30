@@ -12,7 +12,6 @@ type Props = {
 export function Input({ handleCreateNewTask }: Props) {
   const [title, setTitle] = useState('')
  
-  
   return (
     <div>
       <form

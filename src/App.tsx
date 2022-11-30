@@ -37,11 +37,13 @@ export function App() {
   }
 
   function handleActiveTask(task: Task) {
-    let taskFound = tasks.filter((taskItem) => {
+    const tasksNew = tasks
+    let taskFound = tasksNew.filter((taskItem) => {
       if (taskItem.id === task.id) taskItem.isComplete = !taskItem.isComplete
     })
-    console.log(taskFound)
-    setTasks(tasks)
+    console.log(tasksNew)
+    setTasks(tasksNew)
+    console.log(tasks)
     // taskFound!.isComplete = !taskFound?.isComplete
   }
 
@@ -50,7 +52,7 @@ export function App() {
       <Header />
 
       <Input handleCreateNewTask={handleCreateNewTask} />
-
+      
       <TaskList
         tasks={tasks}
         deleteTasks={deleteTasks}

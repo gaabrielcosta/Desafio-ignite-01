@@ -5,6 +5,7 @@
   justify-content: center;
   max-width: 46rem;
   margin-inline: auto;
+  margin-top: -26px;
 }
 
 .input {
@@ -16,17 +17,18 @@
   border: 1px solid var(--gray-700);
   border-radius: 8px;
   margin-right: 8px;
+  
 }
 
 .input > placeholder {
     color: var(--gray-300);
+
 }
 
 .inputContent button {
   display: flex;
   padding: 1rem;
-  gap: 8px;
-  width: 5.625rem;
+  gap: 8px;  
   height: 3.25rem;
   background: var(--blue-dark);
   color: var(--gray-100);

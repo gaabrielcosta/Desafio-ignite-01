@@ -30,8 +30,13 @@ body {
 
 body,
 input,
-button {
+button,
+h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+
+input {
+  color: var(--gray-100);
 }
